@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: "Open Sans", sans-serif;
+      }
+
+      .playlist {
+        display: flex;
+        border: 5px solid #00c6ad;
+        align-items: center;
+        flex-direction: column;
+        width: 270px;
+        height: 700px;
+        padding: 30px 60px;
+      }
+
+      header {
+        width: 100%;
+        height: 100px;
+        display: flex;
+        align-items: center;
+      }
+
+      .playlist-header__item {
+        width: 33%;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .playlist-header__item--title {
+        font-size: 30px;
+        font-weight: 600;
+      }
+
+      main {
+        width: 100%;
+        height: 230px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .playlist-main__header {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 110px;
+      }
+
+      .playlist-main__image {
+        width: 40%;
+        height: 110px;
+        background-color: #ffbd11;
+        border: 1px solid black;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .fa-id-badge {
+        color: white;
+      }
+
+      .playlist-main__info {
+        width: 40%;
+        height: 110px;
+        display: flex;
+        margin-left: 10px;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0 20px;
+      }
+
+      .playlist-main__info > div:first-child {
+        font-weight: 600;
+        font-size: 30px;
+      }
+      .playlist-main__info > div:nth-child(2) {
+        font-weight: 600;
+        font-size: 30px;
+        margin-bottom: 20px;
+      }
+      .playlist-main__info > div:last-child {
+        font-weight: 600;
+        font-size: 13px;
+      }
+
+      .playlist-main__body {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 110px;
+        margin: 30px 0;
+      }
+      .playlist-main__button {
+        width: 50px;
+        height: 50px;
+        border: 1px solid black;
+        border-radius: 50%;
+        background-color: white;
+        border-bottom-width: 3px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .playlist-main__play {
+        width: 50%;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .playlist-main__play > span {
+        margin-left: 10px;
+        font-weight: 600;
+        font-size: 22px;
+      }
+
+      footer {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 350px;
+      }
+
+      .playlist-footer__item {
+        width: 100%;
+        height: 25%;
+        display: flex;
+      }
+
+      .playlist-footer__item--image {
+        width: 60px;
+        height: 60px;
+        border: 1px solid black;
+        border-radius: 15px;
+      }
+
+      .playlist-footer__item:first-child > .playlist-footer__item--image {
+        background-color: #f85a2a;
+      }
+      .playlist-footer__item:nth-child(2) > .playlist-footer__item--image {
+        background-color: #ff89bb;
+      }
+      .playlist-footer__item:nth-child(3) > .playlist-footer__item--image {
+        background-color: #96979b;
+      }
+      .playlist-footer__item:last-child > .playlist-footer__item--image {
+        background-color: #00c6ad;
+      }
+
+      .playlist-footer__item--info {
+        display: flex;
+        height: 60px;
+        margin-left: 15px;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .playlist-footer__item--title {
+        font-weight: 600;
+        margin-bottom: 5px;
+        font-size: 15px;
+      }
+      .playlist-footer__item--subtitle {
+        font-size: 10px;
+        color: #858790;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="playlist">
+      <header>
+        <i class="playlist-header__item fas fa-times fa-2x"></i>
+        <div class="playlist-header__item">
+          <span class="playlist-header__item--title">Playlist</span>
+        </div>
+        <div class="playlist-header__item"></div>
+      </header>
+      <main>
+        <div class="playlist-main__header">
+          <div class="playlist-main__image">
+            <i class="far fa-id-badge fa fa-4x"></i>
+          </div>
+          <div class="playlist-main__info">
+            <div>Random</div>
+            <div>Love</div>
+            <div>by Divay Kapoor</div>
+          </div>
+        </div>
+        <div class="playlist-main__body">
+          <div class="playlist-main__button playlist-main__play">
+            <i class="fa-solid fa-play fa"></i>
+            <span>Play</span>
+          </div>
+          <div class="playlist-main__button">
+            <i class="fa-solid fa-heart fa"></i>
+          </div>
+          <div class="playlist-main__button">
+            <i class="fa-solid fa-plus fa"></i>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <div class="playlist-footer__item">
+          <div class="playlist-footer__item--image"></div>
+          <div class="playlist-footer__item--info">
+            <div class="playlist-footer__item--title">Matargasti</div>
+            <div class="playlist-footer__item--subtitle">Mohit Chauhan</div>
+          </div>
+        </div>
+        <div class="playlist-footer__item">
+          <div class="playlist-footer__item--image"></div>
+          <div class="playlist-footer__item--info">
+            <div class="playlist-footer__item--title">Attitude</div>
+            <div class="playlist-footer__item--subtitle">
+              Lewis OfMan - Attitude
+            </div>
+          </div>
+        </div>
+        <div class="playlist-footer__item">
+          <div class="playlist-footer__item--image"></div>
+          <div class="playlist-footer__item--info">
+            <div class="playlist-footer__item--title">Try Everything</div>
+            <div class="playlist-footer__item--subtitle">Shakira Zootopia</div>
+          </div>
+        </div>
+        <div class="playlist-footer__item">
+          <div class="playlist-footer__item--image"></div>
+          <div class="playlist-footer__item--info">
+            <div class="playlist-footer__item--title">Sunflower</div>
+            <div class="playlist-footer__item--subtitle">
+              Joseph Vincent Sunflower
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+
+  <script
+    src="https://kit.fontawesome.com/6478f529f2.js"
+    crossorigin="anonymous"
+  ></script>
+</html>

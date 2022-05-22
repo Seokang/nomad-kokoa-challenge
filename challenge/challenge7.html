@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>The Best Colors</title>
+    <style>
+      body {
+        background-color: rgb(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .title__text {
+        font-weight: 600;
+        font-size: 40px;
+      }
+
+      .contents {
+        margin-top: 50px;
+        width: 600px;
+        height: 900px;
+        display: flex;
+        position: relative;
+      }
+
+      .contents__column {
+        width: 100%;
+        height: 48%;
+        position: absolute;
+      }
+
+      .contents__column:first-child {
+        top: 0;
+      }
+
+      .contents__column:last-child {
+        bottom: 0;
+      }
+
+      .contents__column > div {
+        width: 44%;
+        height: 100%;
+        position: absolute;
+        border: 6px solid white;
+      }
+
+      .contents__column:first-child > div:first-child {
+        background-color: tomato;
+        left: 0;
+        top: 0;
+      }
+      .contents__column:first-child > div:last-child {
+        background-color: teal;
+        top: 0;
+        right: 0;
+      }
+      .contents__column:last-child > div:first-child {
+        background-color: burlywood;
+        left: 0;
+        bottom: 0;
+      }
+      .contents__column:last-child > div:last-child {
+        background-color: thistle;
+        right: 0;
+        bottom: 0;
+      }
+
+      .contents__column--info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+        height: 30%;
+        top: 25px;
+        position: relative;
+        background-color: white;
+        padding: 10px;
+        box-sizing: border-box;
+      }
+
+      span:first-child {
+        font-weight: 600;
+        font-size: 25px;
+      }
+
+      span:last-child {
+        font-weight: 600;
+        font-size: 15px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="title">
+      <h1 class="title__text">The Best Colors</h1>
+    </div>
+    <div class="contents">
+      <div class="contents__column">
+        <div>
+          <div class="contents__column--info">
+            <span>Tomato</span>
+            <span>#FF6347</span>
+          </div>
+        </div>
+        <div>
+          <div class="contents__column--info">
+            <span>Teal</span>
+            <span>#008080</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="contents__column">
+        <div>
+          <div class="contents__column--info">
+            <span>Burlywood</span>
+            <span>#DEB887</span>
+          </div>
+        </div>
+        <div>
+          <div class="contents__column--info">
+            <span>Thistle</span>
+            <span>#D7BFD7</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

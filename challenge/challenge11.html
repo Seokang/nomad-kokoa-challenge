@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Player</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.14.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="challenge11-styles.css" />
+  </head>
+  <body>
+    <div class="screens">
+      <div class="screens-screen">
+        <div class="screens-screen-static">
+          <div class="screen-header">
+            <i class="fas fa-arrow-left fa-lg"></i>
+            <i class="fas fa-search fa-lg"></i>
+          </div>
+          <div class="screen__info">
+            <img class="screen__info-img" src="./profile.png" />
+            <h4 class="screen__info--title">SeoKang</h4>
+            <h6 class="screen__info--subtitle">Android Developer</h6>
+
+            <div class="screen__info--buttons">
+              <div class="screen__info--button">
+                <span>Shuffle</span>
+              </div>
+              <div class="screen__info--button">
+                <i class="fas fa-heart fa-lg"></i>
+                <span>212971</span>
+              </div>
+            </div>
+          </div>
+          <div class="screen__album--list">
+            <div class="album__item">
+              <div class="album__item-info">
+                <img class="album__item-info--img" src="./profile.png" />
+                <div class="album__item-info--text">
+                  <h4 class="album__item-info--title">SeoKang</h4>
+                  <h6 class="album__item-info--subtitle">Android</h6>
+                </div>
+              </div>
+              <i class="fas fa-ellipsis-v fa-lg"></i>
+            </div>
+
+            <div class="album__item album__item--selected">
+              <div class="album__item-info">
+                <img class="album__item-info--img" src="./profile.png" />
+                <div class="album__item-info-play">
+                  <i class="fas fa-music fa-lg"></i>
+                </div>
+                <div class="album__item-info--text">
+                  <h4 class="album__item-info--title">The Developer</h4>
+                  <h6 class="album__item-info--subtitle">SeoKang</h6>
+                </div>
+              </div>
+              <i class="fas fa-ellipsis-v fa-lg"></i>
+            </div>
+
+            <div class="album__item">
+              <div class="album__item-info">
+                <img class="album__item-info--img" src="./profile3.png" />
+                <div class="album__item-info--text">
+                  <h4 class="album__item-info--title">SeoKang</h4>
+                  <h6 class="album__item-info--subtitle">IOS, The Developer</h6>
+                </div>
+              </div>
+              <i class="fas fa-ellipsis-v fa-lg"></i>
+            </div>
+            <div class="album__item">
+              <div class="album__item-info">
+                <img class="album__item-info--img" src="./profile2.png" />
+                <div class="album__item-info--text">
+                  <h4 class="album__item-info--title">SeoKang</h4>
+                  <h6 class="album__item-info--subtitle">WebStorm</h6>
+                </div>
+              </div>
+              <i class="fas fa-ellipsis-v fa-lg"></i>
+            </div>
+            <div class="album__item">
+              <div class="album__item-info">
+                <img class="album__item-info--img" src="./profile.png" />
+                <div class="album__item-info--text">
+                  <h4 class="album__item-info--title">SeoKang</h4>
+                  <h6 class="album__item-info--subtitle">EARTHQUAKE</h6>
+                </div>
+              </div>
+              <i class="fas fa-ellipsis-v fa-lg"></i>
+            </div>
+          </div>
+        </div>
+        <div class="screen__play-info">
+          <div class="play-info--text">
+            <h4 class="play-info--title">The Developer</h4>
+            <h6 class="play-info--subtitle">SeoKang</h6>
+          </div>
+          <div class="play-info--buttons">
+            <i class="fas fa-step-backward fa-xs"></i>
+            <i class="fas fa-pause fa-lg"></i>
+            <i class="fas fa-step-forward fa-xs"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="screens-screen">
+        <div class="screens-screen-static">
+          <div class="screen-header">
+            <i class="fas fa-arrow-left fa-lg"></i>
+            <i class="fas fa-search fa-lg"></i>
+          </div>
+          <div class="screen__info">
+            <img
+              class="screen__info-img screen__info-img-xl"
+              src="./profile3.png"
+            />
+            <h4 class="screen__info--title screen__info--title-xl">SeoKang</h4>
+            <h6 class="screen__info--subtitle screen__info--subtitle-xl">
+              IOS, The Developer
+            </h6>
+          </div>
+          <div class="screen__status">
+            <div class="status__bar--info">
+              <span>1:56</span>
+              <span>2:21</span>
+            </div>
+            <div class="status__bar--slider">
+              <div class="status__bar--backward"></div>
+              <div class="status__bar--forward"></div>
+              <div class="status__bar--current"></div>
+            </div>
+          </div>
+          <div class="screen__buttons">
+            <i class="far fa-repeat fa fa-lg"></i>
+            <i class="fas fa-step-backward fa-lg"></i>
+            <div class="screen__button_play">
+              <i class="fas fa-play fa-lg"></i>
+            </div>
+            <i class="fas fa-step-forward fa-lg"></i>
+            <i class="fas fa-random fa-lg"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
